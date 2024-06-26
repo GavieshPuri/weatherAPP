@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --bg:#001233;
+    --containerBg: linear-gradient(145deg,#4d0088,#005f6f);
+    --txt: #fff;
+    --input:#ebfffc;
+    --input_color:#3f3f3f;
+    --city:#fff;
+    --temp:#FFf;
+    --climate:#fde300;
+    --error:#f00;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto','Ital';
+}
+body{
+    background: var(--bg);
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 90%;
+    max-width: 26vmax;
+    color:var(--txt);
+    background: var(--containerBg);
+    border: 3px solid #FEC501;
+    border-radius: 20px;
+    padding: 2vmax 1.5vmax;
+    text-align: center;   
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: var(--input);
+    color:var(--input_color);
+    height: 3.5vmax;
+    padding: 0.8vmax 1.5vmax;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 0.7vmax;
+    font-size: 1.3vmax;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background-color: var(--input);
+    border-radius: 50%;
+    width: 3.5vmax;
+    height: 3.5vmax;
+    font-size: 2vmax;
+    cursor: pointer;
+}
+.search button img{
+    width: 1.5vmax;
+    height: 1.5vmax;
+}
+
+.error{
+    text-align: center;
+    margin: 1vmax;
+    font-size: 3vmax;
+    color: var(--error);
+    padding-top: 2vmax;
+    display: none;
+}
+.weather{
+    display: none;
+}
+
+.weather-icon {
+    width: 9.5vmax;
+    margin-top: 1.5vmax;
+}
+
+.weather h1{
+    font-size: 5vmax;
+    font-weight: 500;
+    color: var(--temp);
+   
+}
+.weather h2{
+
+    font-size: 3.5vmax;
+    font-weight: 400;
+    color: var(--city);
+}
+
+.weather .desc{
+    font-size: 1.55vmax;
+    margin-top: 1vmax;
+   
+}
+.weather .desc span{
+    color: var(--climate);
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3vmax;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 1vw;
+}
+
+.col img{
+    width: 2.7vmax;
+    margin-right: 0.7vmax;
+}
+
+.humidity,.wind{
+    font-size: 1.5vmax;
+    margin-top: -0.6vmax;
+}
+.txt{
+    font-size: 1vmax;
+    line-height: 1.6vmax;
+}
+

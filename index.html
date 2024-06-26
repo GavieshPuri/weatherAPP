@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <noscript>please enable JavaScript to run this site</noscript>
+    <div class="container">
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="enter city name" spellcheck="false">
+                <button><i class="ri-search-line"></i></button>
+            </div>
+            <div class="error">
+                <p>City Not Found</p>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" alt="" class="weather-icon">
+                <h1 class="temp">27°c</h1>
+                <h2 class="city">Jaipur</h2>
+                <p class="desc">Climate : <span>Sunny</span></p>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png" alt="">
+                        <div><p class="humidity">30%</p>
+                            <p class="txt">Humidity</p></div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" alt="">
+                        <div><p class="wind">5.66 km/h</p>
+                            <p class="txt">Wind Speed</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
