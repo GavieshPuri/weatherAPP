@@ -14,7 +14,11 @@ async function weather(city) {
     if(response.status == 404){
         document.querySelector(".error").style.display="block";
         document.querySelector(".weather").style.display="none";
-    }else{
+    }else if(input.value == ''){
+        document.querySelector(".error").style.display="block";
+        document.querySelector(".weather").style.display="none";
+    }
+    else{
         
     let data = await response.json();
     
@@ -43,13 +47,19 @@ async function weather(city) {
     document.querySelector(".weather").style.display="block";
     document.querySelector(".error").style.display="none";
     
-    input.value='';
+    // input.value='';
 }
 
     }
     
 btn.addEventListener('click',()=>{
     weather(input.value);
+    
+})
+input.addEventListener('keydown',(event)=>{
+
+    if(event.key === "Enter")
+        weather(input.value);
     
 })
 
