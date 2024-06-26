@@ -2,13 +2,15 @@
 :root{
     --bg:#001233;
     --containerBg: linear-gradient(145deg,#4d0088,#005f6f);
-    --txt: #fff;
+    --txt: #fff;    
     --input:#ebfffc;
     --input_color:#3f3f3f;
     --city:#fff;
-    --temp:#FFf;
-    --climate:#fde300;
+    --temp:#ffffff;
+    --climate:#ffe300;
     --error:#f00;
+    --wind_and_humidity:#fFE269;
+
 }
 *{
     padding: 0;
@@ -131,9 +133,11 @@ body{
 .humidity,.wind{
     font-size: 1.5vmax;
     margin-top: -0.6vmax;
+    color: var(--wind_and_humidity);
 }
 .txt{
     font-size: 1vmax;
     line-height: 1.6vmax;
+    color: var(--txt);
 }
 
