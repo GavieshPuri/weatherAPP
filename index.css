@@ -141,3 +141,48 @@ body{
     color: var(--txt);
 }
 
+@media(max-width:600px){
+    container{
+        height: 75%;
+    }
+    .card{
+        padding:3vmax 1.5vmax;
+        max-width: 35vmax;
+    }
+    .search input{
+        height: 4vmax;
+        padding: 1vmax 1.5vmax;
+        font-size: 1.6vmax;
+        margin-right: 0.5vmax;
+    }
+    .error{
+        margin: 2vmax;
+        padding-top: 2vmax;
+        font-size: 6vmax;
+    }
+    .weather-icon{
+        width: 13.5vmax;
+    }   
+    .weather h1{
+        font-size: 7vmax;
+    }
+    .weather h2{
+        font-size: 5vmax;
+    }
+    .weather .desc{
+        font-size: 2.5vmax;
+        margin-top: 1.5vmax;
+    }
+    .col img{
+        width: 5vmax;
+        margin-right: 1.5vmax;
+    }
+    .humidity , .wind{
+        font-size: 2.5vmax;
+        margin-top: 0;
+    }
+    .txt{
+        font-size: 1.5vmax;
+    line-height: 2.1vmax;
+    }
+}
